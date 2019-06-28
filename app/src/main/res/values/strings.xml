@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gerenciador de Atividades</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+    <string name="title_activity_tarefa_list">Lista de Tarefas</string>
+    <string name="escolha_um_grau">Escolha um Grau</string>
+    <string name="escolha_um_estado">Escolha um Estado</string>
+</resources>

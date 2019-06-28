@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#C5CDFA">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Cadastrar Tarefa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_titulo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Título"
+                android:inputType="textAutoComplete" />
+
+            <EditText
+                android:id="@+id/edt_descricao"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Descrição"
+                android:inputType="none" />
+
+            <Spinner
+                android:id="@+id/spinnerGrau"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="@string/escolha_um_grau"
+                android:inputType="none"
+                android:spinnerMode="dialog"
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <Spinner
+                android:id="@+id/spinnerEstado"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="@string/escolha_um_estado"
+                android:inputType="none"
+                android:spinnerMode="dialog"
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <EditText
+                android:id="@+id/edt_date"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Data Limite"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/edt_hora"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:hint="Hora"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/txt_tarefas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:text="Definir Etiqueta"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textSize="17sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewTags"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="26dp"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/buttonSalvarTarefa"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:background="#3F51B5"
+                android:text="Salvar Tarefa"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
